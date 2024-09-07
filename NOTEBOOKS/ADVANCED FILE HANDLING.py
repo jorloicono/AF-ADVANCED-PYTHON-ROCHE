@@ -140,6 +140,60 @@ with open('output.csv', mode='w', newline='') as file:
     
 print("CSV file 'output.csv' created with data.")
 
+##Example with Pandas
+
+# name,age,city,email
+# Alice,28,New York,alice@example.com
+# Bob,34,Los Angeles,bob@example.com
+# Charlie,29,Chicago,charlie@example.com
+# David,40,New York,david@example.com
+# Eva,22,San Francisco,eva@example.com
+
+# Import the necessary libraries
+import pandas as pd
+
+# Read a CSV file into a DataFrame
+# Assuming 'data.csv' is the CSV file located in the same directory
+df = pd.read_csv('data.csv')
+
+# Display the first few rows of the DataFrame to understand its structure
+print("First few rows of the DataFrame:")
+print(df.head())
+
+# Show basic information about the DataFrame
+print("\nDataFrame Information:")
+print(df.info())
+
+# Show basic statistics of the DataFrame
+print("\nBasic Statistics:")
+print(df.describe())
+
+# Filter rows based on a condition
+# Example: Filtering rows where the value in the 'age' column is greater than 30
+filtered_df = df[df['age'] > 30]
+
+print("\nFiltered DataFrame (age > 30):")
+print(filtered_df)
+
+# Sort the DataFrame based on a column
+# Example: Sorting by the 'name' column
+sorted_df = df.sort_values(by='name')
+
+print("\nSorted DataFrame by 'name':")
+print(sorted_df)
+
+# Add a new column to the DataFrame
+# Example: Adding a 'new_column' with default value 0
+df['new_column'] = 0
+
+print("\nDataFrame with new column:")
+print(df.head())
+
+# Write the modified DataFrame to a new CSV file
+df.to_csv('modified_data.csv', index=False)
+
+print("\nModified DataFrame has been saved to 'modified_data.csv'.")
+
 # ## Compressed Files
 
 # Compressed files can reduce file size, and Python provides modules to handle compressed files.
