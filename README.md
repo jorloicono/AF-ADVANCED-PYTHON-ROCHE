@@ -1,8 +1,4 @@
 # AF-ADVANCED-PYTHON-ROCHE
-
-- DAY 1: https://colab.research.google.com/drive/1hntSX8W72AO4fd3h_nWyjPaBWGCOBxjN?usp=sharing
-- DAY 2: https://colab.research.google.com/drive/14V0SB73UWwls-L3Swr-UwM1aCddrliFX?usp=sharing
-- DAY 3: https://colab.research.google.com/drive/1_MyyMt2fngZgTfGuf08d6qrNv9WEdAbA?usp=sharing
   
 ## Advanced Object-Oriented Programming
 
