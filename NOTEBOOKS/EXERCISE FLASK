@@ -1,0 +1,46 @@
+Flask Web Application Exercise: User Feedback Form
+Objective:
+Build a small web application using Flask that collects user feedback via a form. Once the user submits the form, they will be redirected to the homepage, where they can submit the form again or view a confirmation message that their feedback was received.
+
+Requirements:
+Home Page:
+
+Create a home page that welcomes the user.
+The home page should have a button labeled "Submit Feedback" that takes the user to the feedback form.
+Feedback Form:
+
+Create a form where users can submit their name, email address, and feedback message.
+The form should have the following fields:
+Name: A text input field for the user to provide their name.
+Email: An email input field.
+Feedback Message: A text area for the user to write their feedback.
+Include a Submit button.
+Form Handling:
+
+When the form is submitted, the server should:
+Process the form data.
+Store the feedback temporarily (you don't need to store it in a database—just display it after submission).
+Redirect the user back to the homepage after submission.
+Home Page After Form Submission:
+
+After submitting the form, redirect the user to the home page.
+Display a message on the home page, such as "Thank you, [Name]! Your feedback has been submitted."
+Bonus (Optional):
+Add basic form validation to ensure that all fields are filled in before submission.
+Use CSS to style the form and make the pages look more visually appealing.
+Instructions:
+Set up your Flask app:
+
+Create a Python file named app.py for your Flask app.
+Create two HTML files: home.html and form.html, and place them in a templates folder.
+Flask Routing:
+
+Create routes for the home page (/) and the form page (/feedback).
+Handle both GET and POST requests for the form submission.
+Redirect and Form Handling:
+
+When the form is submitted, process the form data and redirect the user to the home page.
+Show a message on the home page thanking the user for their feedback.
+Test the Application:
+
+Run the Flask app and test it in your web browser by going to http://127.0.0.1:5000/.
